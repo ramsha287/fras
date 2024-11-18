@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Attendance System</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file link -->
+</head>
+<body>
+    <h1>Face Recognition Attendance System</h1>
+
+    <!-- Enrollment Section -->
+    <h2>Enroll a Student</h2>
+    <form id="enroll-form">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" required placeholder="Enter student name">
+        <br>
+        <label for="student-image">Student Image:</label>
+        <input type="file" id="student-image" accept="image/*" required>
+        <br>
+        <button type="submit">Enroll Student</button>
+    </form>
+
+    <!-- Buttons to Start/Stop Attendance -->
+    <h2>Attendance Section</h2>
+    <button id="start-attendance" onclick="startAttendance()">Start Attendance</button>
+    <button id="stop-attendance" onclick="stopAttendance()">Stop Attendance</button>
+    
+    <!-- Display status for attendance -->
+    <div id="attendance-status"></div>
+
+    <script src="script.js"></script> <!-- External JS file link -->
+</body>
+</html>
